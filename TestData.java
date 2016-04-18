@@ -21,7 +21,7 @@ public class TestData {
      	 	}//for
 		i=0;
 	try {
-		//String datasetfilename ="D:/CU DENVER/4th Semester/Data Mining and Analytics/Assignmentss/Assignment 4/A4. Package/Datasets/breast_cancer, test.txt";
+		//String datasetfilename ="Datasets/breast_cancer, test.txt";
     	Scanner list = new Scanner(new File(datasetfilename));
     	String splitword;
     	while (list.hasNext()) {
