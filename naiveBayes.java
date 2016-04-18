@@ -96,7 +96,7 @@ public static void trueOrfalse(String testdatasetfilename) throws IOException{
 	int truecounter =0;int falsecounter =0;
 	String[] pcount = new String[3000];
 	String[] ncount = new String[3000];
-	FileWriter outputfile = new FileWriter("D:\\CU DENVER\\4th Semester\\Data Mining and Analytics\\Assignmentss\\Assignment 4\\A4. Package\\Output\\Basic, poker.txt");
+	FileWriter outputfile = new FileWriter("Output\\Basic, poker.txt");
   	Scanner list = new Scanner(new File(testdatasetfilename));
   	Scanner outputlist = new Scanner(new File(testdatasetfilename));
 	try{
@@ -203,17 +203,17 @@ public static void trueOrfalse(String testdatasetfilename) throws IOException{
  */
 public static void main(String[] args) throws Exception
 {
-	String trainingdatasetfilename  ="D:/CU DENVER/4th Semester/Data Mining and Analytics/Assignmentss/Assignment 4/A4. Package/Datasets/breast_cancer, training.txt";
-	String testdatasetfilename  ="D:/CU DENVER/4th Semester/Data Mining and Analytics/Assignmentss/Assignment 4/A4. Package/Datasets/breast_cancer, test.txt";
+	String trainingdatasetfilename  ="Datasets/breast_cancer, training.txt";
+	String testdatasetfilename  ="Datasets/breast_cancer, test.txt";
 	TestData.readTestData(testdatasetfilename);
 	System.out.println("\nREADING TRANING DATA\n");
 	TrainingData.readTrainingData(trainingdatasetfilename);
-	//readTrainingData("D:/CU DENVER/4th Semester/Data Mining and Analytics/Assignmentss/Assignment 4/A4. Package/Datasets/breast_cancer, training.txt");
+	//readTrainingData("Datasets/breast_cancer, training.txt");
 	System.out.println("READING TEST DATA\n");
 	//TestData.readTestData(testdatasetfilename);
-	//readTestData("D:/CU DENVER/4th Semester/Data Mining and Analytics/Assignmentss/Assignment 4/A4. Package/Datasets/breast_cancer, test.txt");
+	//readTestData("Datasets/breast_cancer, test.txt");
 	System.out.println("TESTING PREDICTIONS. . . . \n");
 	trueOrfalse(testdatasetfilename);
-	classification.Adaboost.NBAdaboost.main(null);
+	//classification.Adaboost.NBAdaboost.main(null);
 }//main
 }//naiveBayes Class
